@@ -224,3 +224,17 @@ bash /tmp/aw25/test25.sh >> /tmp/aw25/test.txt
 sort /tmp/aw25/test.txt | uniq -u 
 # uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
 ```
+
+# 25-26
+
+Logging in to bandit26 from bandit25 should be fairly easy… The shell for user bandit26 is not /bin/bash, but something else. Find out what it is, how it works and how to break out of it.
+
+```
+scp bandit25@bandit.labs.overthewire.org:bandit26.sshkey .
+ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org
+# resize screeen
+v
+:Explore
+# find etc/bandit_pass/bandit26
+# 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+```
